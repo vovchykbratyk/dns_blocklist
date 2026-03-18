@@ -210,7 +210,7 @@ def build_metadata(
     next_run = now_utc + dt.timedelta(days=3)
 
     lines: list[str] = [
-        "! Title: Eagle Unified AdGuard DNS Blocklist",
+        "! Title: VovchykBratyk Unified AdGuard DNS Blocklist",
         "! Description: Consolidated DNS blocklist for personal AdGuard Home instances",
         f"! Maintainer: {maintainer}",
         "! Repository: https://github.com/<your-username>/dns_blocklist",
@@ -355,7 +355,7 @@ def main() -> int:
         source_stats.append(stat)
 
     metadata = build_metadata(
-        maintainer="Eric Eagle",
+        maintainer="VovchykBratyk",
         sources=sources,
         success_count=success_count,
         failed_count=failed_count,

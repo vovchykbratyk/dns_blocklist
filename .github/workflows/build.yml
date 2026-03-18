@@ -3,7 +3,7 @@ name: Build AdGuard Consolidated Blocklist
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 4 */3 * *'  # every 3 days
+    - cron: '00 3 */1 * *'  # every 3 days
 
 permissions:
   contents: write

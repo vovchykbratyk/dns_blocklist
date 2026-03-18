@@ -1,0 +1,16 @@
+# AdGuard native
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_44.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_60.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_61.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_62.txt
+https://adguardteam.github.io/HostlistsRegistry/assets/filter_63.txt
+
+# AdTidy (Mobile-focused)
+https://filters.adtidy.org/extension/chromium/filters/11.txt
+
+# OISD
+https://big.oisd.nl/
+https://nsfw-small.oisd.nl/

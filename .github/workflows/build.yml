@@ -1,0 +1,36 @@
+name: Build AdGuard Consolidated Blocklist
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 */3 * *'  # every 3 days
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run build
+        run: python build.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add output/adguard-master.txt
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update blocklist"
+            git push
+          fi

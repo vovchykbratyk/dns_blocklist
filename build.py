@@ -210,10 +210,10 @@ def build_metadata(
     next_run = now_utc + dt.timedelta(days=3)
 
     lines: list[str] = [
-        "! Title: VovchykBratyk Unified AdGuard DNS Blocklist",
+        "! Title: VovchykBratyk Consolidated AdGuard Home Blocklist",
         "! Description: Consolidated DNS blocklist for personal AdGuard Home instances",
         f"! Maintainer: {maintainer}",
-        "! Repository: https://github.com/<your-username>/dns_blocklist",
+        "! Repository: https://github.com/VovchykBratyk/dns_blocklist",
         "! Created: 2026-03-18",
         f"! Last Updated UTC: {now_utc.replace(microsecond=0).isoformat().replace('+00:00', 'Z')}",
         f"! Next Scheduled Update UTC: {next_run.replace(microsecond=0).isoformat().replace('+00:00', 'Z')}",
